@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
+import './../App.css';
 
 class TodoItem extends Component {
 
@@ -8,10 +8,12 @@ class TodoItem extends Component {
     }
   render() {
     return (
-      <li className="Todo">
-        <strong>{this.props.todos.title}</strong>
-        <button onClick={this.handleClick.bind(this,this.props.todos.id)}>Delete</button>
-      </li>
+        <div className="Flex">
+            <li className="TodoItem">
+                <strong>{this.props.todos.title}</strong>
+            </li>
+            <button className="Button1" onClick={this.handleClick.bind(this,this.props.todos.id)}>Delete</button>
+        </div>
     );
   }
 }

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
+import './../App.css';
 import TodoItem from './TodoItem'
 
 class Todos extends Component {
@@ -18,7 +18,9 @@ class Todos extends Component {
       }
     return (
       <div className="Todos">
+      <div className="TodoHead">
         <h3> Your To Do list.</h3>
+        </div>
         {todoItems}
       </div>
     );
